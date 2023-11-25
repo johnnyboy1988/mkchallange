@@ -16,7 +16,8 @@ porem la mudou um pouco e agora exige cartão de crédito internacional.
 Por conta disso não será possivel testar em produção. Mas acredito que fora isso esteja tudo ok.
 
 
-
+<div>
+  
 Ferramentas requeridas
 <br>
 TypeScript - OK
@@ -32,6 +33,7 @@ Docker - OK
 Redis - Não foi usado.
 <br>
 PostgreSQL - OK
+</div>
 
 
 Na api, swagger foi adiconado o parametro de autenticação para colocar o token JWT. O redis, me parece estranho na api. Seria mais usual, usar na aplicação que consome a api.
