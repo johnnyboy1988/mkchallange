@@ -18,18 +18,28 @@ Por conta disso não será possivel testar em produção. Mas acredito que fora 
 
 
 Ferramentas requeridas
+<br>
 TypeScript - OK
+<br>
 Nest.js - OK
+<br>
 TypeORM - OK
+<br>
 Swagger - OK
+<br>
 Docker - OK
+<br>
 Redis - Não foi usado.
+<br>
 PostgreSQL - OK
 
 
 Na api, swagger foi adiconado o parametro de autenticação para colocar o token JWT. O redis, me parece estranho na api. Seria mais usual, usar na aplicação que consome a api.
+<br>
 No caso nunca tinha usado este, porem já usei o localStorage, em aplilcações com Ionic. Tem um conceito parecido, la utilizei para salvar os tokens de acesso as apis. 
+<br>
 Docker , foi usado apenas para facilitar a conexão com o banco de dados. Não tenho muita experiência com o Docker, porem parece simples sua utilização realmente gostaria de usar mais no dia a dia.
+<br>
 
 
 
