@@ -5,31 +5,39 @@
 [circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
 [circleci-url]: https://circleci.com/gh/nestjs/nest
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
-
 ## Description
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+
+
+A <a href="https://vercel-nest-4riiny404-joaos-projects-5bb97a9e.vercel.app/">Aplicação</a> foi publicada, no Vercel. Porem somente a versão paga, da acesso ao banco de dados.
+Neste caso aplicação não está rodando. Nos logs da vercel, é possivel identificar o motivo, no vaso o TypeOrm não conseguiu se conectar ao banco de dados. Tentei publicar no Heroku,
+porem la mudou um pouco e agora exige cartão de crédito internacional. 
+Por conta disso não será possivel testar em produção. Mas acredito que fora isso esteja tudo ok.
+
+
+
+Ferramentas requeridas
+TypeScript - OK
+Nest.js - OK
+TypeORM - OK
+Swagger - OK
+Docker - OK
+Redis - Não foi usado.
+PostgreSQL - OK
+
+
+Na api, swagger foi adiconado o parametro de autenticação para colocar o token JWT. O redis, me parece estranho na api. Seria mais usual, usar na aplicação que consome a api.
+No caso nunca tinha usado este, porem já usei o localStorage, em aplilcações com Ionic. Tem um conceito parecido, la utilizei para salvar os tokens de acesso as apis. 
+Docker , foi usado apenas para facilitar a conexão com o banco de dados. Não tenho muita experiência com o Docker, porem parece simples sua utilização realmente gostaria de usar mais no dia a dia.
+
+
 
 ## Docker
 Comando para criar o Docker do banco de dados. 
 $  docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -p 5432:5432 -d postgres
 
+(Arquivo .env foi commitado, nele está configurado para usar essa string de conexão do Docker.)
 
 ## Installation
 
@@ -62,20 +70,4 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
-
-
 
